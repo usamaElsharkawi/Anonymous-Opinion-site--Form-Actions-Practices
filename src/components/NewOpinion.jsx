@@ -36,7 +36,8 @@ export function NewOpinion() {
       errors: null,
     };
   }
-  const [formState, formAction, isPending] = useActionState(AddOpinionAction, {
+  
+  const [formState, formAction] = useActionState(AddOpinionAction, {
     erros: null,
   });
   return (
@@ -82,7 +83,7 @@ export function NewOpinion() {
           </ul>
         )}
 
-        <Submit/>
+        <Submit />
       </form>
     </div>
   );
