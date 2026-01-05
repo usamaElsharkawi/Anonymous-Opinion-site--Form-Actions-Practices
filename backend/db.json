@@ -2,14 +2,14 @@
   "opinions": [
     {
       "id": 1767605506694,
-      "votes": 4,
+      "votes": 15,
       "userName": "Usama",
       "title": "If you’re reading this, congratulations",
       "body": "you just found someone who’s looking for a job"
     },
     {
       "id": 1767599714894,
-      "votes": 4,
+      "votes": 1,
       "userName": "usama",
       "title": "React hooks",
       "body": "React hooks make the functional component more capable"
@@ -26,7 +26,7 @@
       "userName": "Maximilian Schwarzmüller",
       "title": "React has more depth than you might first think!",
       "body": "React is a great library to learn, but it's not just about the basics. Dive deeper!\nFor example with this course!",
-      "votes": 0
+      "votes": -1
     }
   ]
 }
