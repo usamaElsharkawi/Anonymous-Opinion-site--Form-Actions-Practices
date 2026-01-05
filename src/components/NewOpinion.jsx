@@ -1,7 +1,9 @@
-import { useActionState } from "react";
+import { useActionState, use } from "react";
+import { OpinionsContext } from "../store/opinions-context";
 
 export function NewOpinion() {
-  function AddOpinionAction(prevFormState, formData) {
+  const { addOpinion } = use(OpinionsContext);
+  async function AddOpinionAction(prevFormState, formData) {
     const { userName, title, body } = Object.fromEntries(formData.entries());
 
     //validation logic
@@ -28,6 +30,7 @@ export function NewOpinion() {
     }
 
     //sedding the data to the backend
+    await addOpinion({ userName, title, body });
     return {
       errors: null,
     };
